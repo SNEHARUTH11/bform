@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Form Generator</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>B-Form Generator</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="file">Upload Student Data (CSV):</label>
+            <input type="file" id="file" name="file" required>
+            <button type="submit">Upload</button>
+        </form>
+        <button id="generateBForm">Generate B-Form</button>
+        <div id="message"></div>
+    </div>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
